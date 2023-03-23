@@ -1,13 +1,14 @@
 package com.study.Board;
 
-import org.apache.catalina.core.ApplicationContext;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
 
 @SpringBootTest
 class BoardApplicationTests {
+
 	@Autowired
 	private ApplicationContext context;
 
