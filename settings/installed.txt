@@ -1,0 +1,6 @@
+Key Promoter X
+String Manipulation
+com.baomidou.plugin.idea.mybatisx
+com.github.chencn.yamlandprops
+com.nasller.CodeGlancePro
+some.awesome

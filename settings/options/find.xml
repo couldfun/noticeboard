@@ -1,0 +1,21 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="localWholeWordsOnly" value="true" />
+    <option name="LOCAL_WHOLE_WORDS_ONLY" value="true" />
+    <option name="SEARCH_SCOPE" value="All Places" />
+    <mask>*.css</mask>
+    <mask>*.properties</mask>
+    <mask>*.js, *.jsp</mask>
+    <mask>*.jsp</mask>
+    <mask>*.js</mask>
+    <mask>*Mapper.java</mask>
+    <mask>*.html</mask>
+    <mask>*controller.java</mask>
+    <mask>*Controller.java</mask>
+    <mask>*.xml</mask>
+    <mask>*.java</mask>
+    <mask>*.java</mask>
+  </component>
+</application>

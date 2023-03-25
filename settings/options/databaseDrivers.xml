@@ -1,0 +1,26 @@
+<application>
+  <component name="LocalDatabaseDriverManager" version="201">
+    <driver id="tibero">
+      <artifact id="Tibero" name="Tibero" use="true" version="6.0" />
+      <keep-alive-query>select 'keep alive' from dual</keep-alive-query>
+    </driver>
+    <driver id="mariadb">
+      <artifact id="MariaDB Connector J" name="MariaDB Connector J" use="true" version="3.0.7" />
+    </driver>
+    <driver id="mysql.8">
+      <artifact />
+      <artifact id="MySQL ConnectorJ" name="MySQL ConnectorJ" use="true" version="8.0.25" />
+    </driver>
+    <driver id="oracle.19">
+      <artifact id="Oracle" name="Oracle" use="true" version="21.5.0.0" />
+    </driver>
+    <driver id="oracle">
+      <artifact id="Oracle" name="Oracle" use="true" version="11.2.0.4" />
+    </driver>
+    <driver id="java.sql.Driver" name="Cubrid" driver-class="cubrid.jdbc.driver.CUBRIDDriver">
+      <library>
+        <url>file://C:/develop/CUBRID-8.4.1_jdbc.jar</url>
+      </library>
+    </driver>
+  </component>
+</application>
