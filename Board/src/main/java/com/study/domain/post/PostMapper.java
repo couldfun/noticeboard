@@ -42,6 +42,6 @@ public interface PostMapper {
      * 게시글 수 카운팅
      * @return 게시글 수
      */
-    int count();
+//    int count();
 
 }
