@@ -75,7 +75,7 @@
             /*<![CDATA[*/
 
                 window.onload = () => {
-                    initCreatedDate();
+                    renderPostInfo();
                 }
 
 
@@ -86,19 +86,22 @@
 
 
                 // 게시글 저장(수정)
-                function savePost() {
-                    const form = document.getElementById('saveForm');
-                    const fields = [form.title, form.writer, form.content];
-                    const fieldNames = ['제목', '이름', '내용'];
+                function renderPostInfo() {
+                    const post = [[ ${post} ]];
 
-                    for (let i = 0, len = fields.length; i < len; i++) {
-                        isValid(fields[i], fieldNames[i]);
+                    if ( !post ) {
+                      initCreatedDate();
+                      return false;
                     }
 
-                    document.getElementById('saveBtn').disabled = true;
-                    form.noticeYn.value = form.isNotice.checked;
-                    form.action = [[ ${post == null} ]] ? '/post/save.do' : '/post/update.do';
-                    form.submit();
+                    const form = document.getElementById('saveForm');
+                    const fields = ['id', 'title', 'content', 'writer', 'noticeYn'];
+                    form.isNotice.checked = post.noticeYn;
+                    form.createdDate.value = dayjs(post.createdDate).format('YYYY-MM-DD HH:mm');
+
+                    fields.forEach(field => {
+                    form[field].value = post[field];
+                  })
                 }
 
             /*]]>*/
