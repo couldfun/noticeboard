@@ -1,4 +1,5 @@
 package com.study.domain.post;
+
 import lombok.Getter;
 
 import java.time.LocalDateTime;
