@@ -2,15 +2,18 @@ package com.study.domain.post;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.transaction.Transactional;
 import java.util.List;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
 public class PostService {
 
     private final PostMapper postMapper;
+
 
     /**
      * 게시글 저장
